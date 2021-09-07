@@ -8,6 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="black_primary">#261C2C</color>
     <color name="blue_primary">#6E85B2</color>
+
+    <color name="black_primary">#1B1B1B</color>
+    <color name="black_dense">#141414</color>
+    <color name="black_trans_70">#B21B1B1B</color>
+    <color name="black_trans_40">#661B1B1B</color>
+
+    <color name="gray_primary">#9F9F9F</color>
+    <color name="gray_border">#424242</color>
 </resources>

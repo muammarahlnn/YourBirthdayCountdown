@@ -1,14 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <Button
-        android:id="@+id/btn_result"
+    <ImageView
+        android:id="@+id/iv_background"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/result" />
+        android:layout_height="match_parent"
+        android:background="@drawable/img_birthday"/>
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/bg_rounded_black_trans"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textColor="@color/gray_primary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/your_name"
+                    android:textColor="@color/gray_primary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_your_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_et_primary"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/gray_primary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/your_date_of_birth"
+                    android:textColor="@color/gray_primary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_your_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_et_primary"
+                    android:focusable="false"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/gray_primary" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_rounded_black"
+                android:text="@string/submit"
+                android:textColor="@color/gray_primary"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

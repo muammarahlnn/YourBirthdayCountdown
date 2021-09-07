@@ -3,4 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="result">Result</string>
+    <string name="title">Your Birthday\nCountdown</string>
+    <string name="submit">Submit</string>
+    <string name="your_date_of_birth">Your date of birth</string>
+    <string name="your_name">Your name</string>
 </resources>

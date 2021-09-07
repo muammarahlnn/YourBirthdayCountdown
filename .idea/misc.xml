@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_et_active.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_et_normal.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_et_primary.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_glossy.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_rounded_black.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_rounded_blacktrans.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.184375" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.16927083333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_result.xml" value="0.184375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
