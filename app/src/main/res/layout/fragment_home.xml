@@ -10,7 +10,8 @@
         android:id="@+id/iv_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/img_birthday"/>
+        android:scaleType="centerCrop"
+        android:background="@drawable/img_birthday2"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:background="@drawable/bg_rounded_black_trans"
+            android:background="@drawable/bg_rounded_blue_trans"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/title"
                 android:textAlignment="center"
-                android:textColor="@color/gray_primary"
+                android:textColor="@color/whitesmoke"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/your_name"
-                    android:textColor="@color/gray_primary"
+                    android:textColor="@color/whitesmoke"
                     android:textSize="20sp" />
 
                 <EditText
@@ -86,7 +87,7 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="@string/your_date_of_birth"
-                    android:textColor="@color/gray_primary"
+                    android:textColor="@color/whitesmoke"
                     android:textSize="20sp" />
 
                 <EditText
@@ -105,13 +106,15 @@
 
             <Button
                 android:id="@+id/btn_submit"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="24dp"
-                android:background="@drawable/bg_rounded_black"
+                android:paddingHorizontal="32dp"
+                android:background="@drawable/bg_btn_primary"
                 android:text="@string/submit"
-                android:textColor="@color/gray_primary"
+                android:textColor="@color/whitesmoke"
                 android:textAllCaps="false"
                 android:fontFamily="@font/roboto_medium"/>
 
