@@ -9,6 +9,7 @@ import android.os.Looper
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.SplashTheme)
         setContentView(R.layout.activity_splash)
 
         // set timer for 1 second
