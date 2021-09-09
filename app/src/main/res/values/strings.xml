@@ -7,4 +7,10 @@
     <string name="submit">Submit</string>
     <string name="your_date_of_birth">Your date of birth</string>
     <string name="your_name">Your name</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="desc_bg_img">Background Image</string>
+    <string name="desc_btn_refresh">Refresh button</string>
 </resources>

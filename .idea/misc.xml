@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_circle_blue_trans.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/drawable/bg_et_active.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/drawable/bg_et_normal.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/drawable/bg_et_primary.xml" value="0.20052083333333334" />
@@ -10,10 +11,11 @@
         <entry key="app/src/main/res/drawable/bg_rounded_black.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/drawable/bg_rounded_black_trans.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/drawable/bg_rounded_blacktrans.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/bg_rounded_blue_trans.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.184375" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_result.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_result.xml" value="0.1984179301252472" />
       </map>
     </option>
   </component>
