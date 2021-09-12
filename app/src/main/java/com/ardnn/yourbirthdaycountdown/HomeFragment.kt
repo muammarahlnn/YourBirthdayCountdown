@@ -15,19 +15,30 @@ import java.util.*
 
 class HomeFragment : Fragment() {
 
+    companion object {
+        val currentDate: IntArray = currentDate()
+
+        private fun currentDate(): IntArray {
+            val calendar = Calendar.getInstance()
+            return intArrayOf(
+                calendar.get(Calendar.DAY_OF_MONTH), // day
+                calendar.get(Calendar.MONTH), // month
+                calendar.get(Calendar.YEAR), // year
+            )
+        }
+    }
+
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var currentDate: IntArray
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         // get current date as initial value for selected date
-        currentDate = getCurrentDate() // [day, month, year]
         var daySelected = currentDate[0]
         var monthSelected = currentDate[1]
         var yearSelected = currentDate[2]
@@ -53,17 +64,23 @@ class HomeFragment : Fragment() {
             btnSubmit.setOnClickListener { view ->
                 // check if user born in the future
                 val bornInTheFuture = isUserBornInTheFuture(daySelected, monthSelected, yearSelected)
-                
-                if (bornInTheFuture) {
+
+                // input validation
+                if (etYourName.text.isNullOrEmpty() || etYourDob.text.isNullOrEmpty()) {
+                    // tell the user that the form is empty
+                    Toast.makeText(activity, "Please fill all the field", Toast.LENGTH_SHORT).show()
+                } else if (bornInTheFuture) {
                     // tell the user that he/she inputted future date
                     Toast.makeText(activity, "You are not born yet", Toast.LENGTH_SHORT).show()
                 } else {
                     // to result section
-                    view.findNavController().navigate(R.id.action_homeFragment_to_resultFragment)
+                    val toResult = HomeFragmentDirections.actionHomeFragmentToResultFragment()
+                    toResult.name = etYourName.text.toString()
+                    toResult.selectedDate = etYourDob.text.toString()
+                    view.findNavController().navigate(toResult)
                 }
             }
         }
-
 
         return binding.root
     }
@@ -71,15 +88,6 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    private fun getCurrentDate(): IntArray {
-        val calendar = Calendar.getInstance()
-        return intArrayOf(
-            calendar.get(Calendar.DAY_OF_MONTH), // day
-            calendar.get(Calendar.MONTH), // month
-            calendar.get(Calendar.YEAR), // year
-        )
     }
 
     private fun isUserBornInTheFuture(day: Int, month: Int, year: Int): Boolean {
